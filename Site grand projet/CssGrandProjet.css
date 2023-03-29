@@ -1,0 +1,421 @@
+/* MENU */
+
+#menu{
+  width:100%;
+  display:block;
+  z-index:999;
+  top:0px;
+  left:0px;
+  position:fixed;
+  background-image: url("images/dust.png");
+  border-bottom: 1px solid;
+}
+
+#menutext{
+  float: left;
+  display: block;
+  margin-left: 5px;
+  padding: 20px 10px
+}
+
+#menu ul{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li{
+  float: left;
+  list-style: none;
+  line-height: 30px;
+  background-image: url("images/dust.png");
+  display: inline;
+}
+
+#menu li a, #menu li a:link{
+  color: black;
+  margin-left: 5px;
+  font-size: 20px;
+  display: block;
+  font-family: $(tabs.font);
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+#menu li li a, #menu li li a:link, #menu li li a:visited{
+  font-size: 10px;
+  background-image: url("images/dust.png");
+  color: black;
+  width: 150px;
+  margin: 0;
+  padding: 0px 10px;
+  line-height:30px;
+  position: relative;
+}
+
+#menu li li a:hover, #menu li li a:active {
+  color: #ccc;
+}
+ 
+#menu li ul{
+  z-index:9999;
+  position:absolute;
+  left:-999em;
+  height:auto;
+  width:170px;
+  margin:0px;
+  padding:0px;
+  border: 1px solid;
+}
+
+#menu li:hover ul, #menu li li:hover ul, #menu li li li:hover ul, #menu li.sfhover ul, #topwctopdropnav li li.sfhover ul, #topwctopdropnav li li li.sfhover ul{
+  left: auto;
+}
+
+#menu li:hover, #menu li.sfhover{
+  position: static;
+}
+/*content*/
+
+#main{
+	background-image: url("images/dust.png");
+	padding: 20px;
+	margin:-10px;
+
+	}
+/* logo */
+#logo img
+{
+    max-width: auto;
+    height: auto;
+    margin: 5px 5px 5px;
+	float:left
+}	
+/*overlay et image-accueil*/
+#accueil {
+  position: relative;
+  width: 100%;
+}
+
+#accueil img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #333;
+}
+
+#accueil:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+/*background-pays*/
+#pays {
+	background: 
+	  url("images/map_monde2.png")no-repeat center fixed;
+    font-family:Arial, Helvetica, sans-serif;	  
+}
+
+.image-pays {
+	padding:25px 50px;
+	background-color: #333333;
+	opacity:0.8;
+    color: white;
+}
+section
+{
+    display: flex;
+}
+/*toutes les comités*/
+#comite {
+	padding-left:300px;
+	padding-right:300px;
+	background-image: url("images/dust.png");
+	}
+#comite img:hover{
+ border: solid 1px;
+	border-color: #8ea2c6;
+ }
+	
+/*Comité Environement*/
+
+#enteteEnv{
+  margin-top:90px;
+  background-color: #A9A9A9;
+  padding: 25px;
+  height:100px;
+  text-align: center;
+  font-size: 75px;
+  font-family: $(tabs.font);
+  font-weight: bold;
+}
+
+#indicEnvPrio{
+	padding: 15px;
+	padding-left:5%;
+	background-color: white;
+	
+}
+
+#indicsEnv{
+	background-color:white;
+	padding-top: 15px;
+	padding-bottom:15px;
+	padding-left: 5%;
+	color: light;
+	background: linear-gradient(-45deg,transparent 50px, #fff 0);
+}
+
+
+
+/*Comité Eco*/
+
+#enteteEco{
+  margin-top:90px;
+  background-color: #A9A9A9;
+  padding: 25px;
+  height:100px;
+  text-align: center;
+  font-size: 75px;
+  font-family: $(tabs.font);
+  font-weight: bold;
+}
+
+#indicEcoPrio{
+	padding: 15px;
+	padding-left:5%;
+	background-color: white;
+}
+
+#indicsEco{
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom:15px;
+	padding-left: 5%;
+	color: light;
+	background: linear-gradient(-45deg,transparent 50px, #fff 0);
+}
+
+
+/*Comité Sante*/
+
+#enteteSante{
+  margin-top:90px;
+  background-color: #A9A9A9;
+  padding: 25px;
+  height:100px;
+  text-align: center;
+  font-size: 75px;
+  font-family: $(tabs.font);
+  font-weight: bold;
+}
+
+#indicSantePrio{
+	padding: 15px;
+	padding-left:5%;
+	background-color: white;
+
+}
+
+#indicsSante{
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom:20px;
+	padding-left: 5%;
+	color: light;
+	background: linear-gradient(-45deg,transparent 50px, #fff 0);
+}
+
+
+
+
+/*Comité Education*/
+
+#enteteEdu{
+  margin-top:90px;
+  background-color: #A9A9A9;
+  padding: 25px;
+  height:100px;
+  text-align: center;
+  font-size: 75px;
+  font-family: $(tabs.font);
+  font-weight: bold;
+}
+
+#indicEduPrio{
+	padding: 15px;
+	padding-left:5%;
+	background-color: white ;
+}
+
+#indicsEdu{
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom:15px;
+	padding-left: 5%;
+	color: light;
+	background: linear-gradient(-45deg,transparent 50px, #fff 0);
+}
+
+
+
+/*Comité Infrastructure*/
+
+#enteteInfra{
+  margin-top:90px;
+  background-color: #A9A9A9;
+  padding: 25px;
+  height:100px;
+  text-align: center;
+  font-size: 75px;
+  font-family: $(tabs.font);
+  font-weight: bold;
+}
+
+#indicInfraPrio{
+	padding: 15px;
+	padding-left:5%;
+	background-color: white;
+}
+
+#indicsInfra{
+	background-color: white;
+	padding-top: 15px;
+	padding-bottom:15px;
+	padding-left: 5%;
+	color: light;
+	background: linear-gradient(-45deg,transparent 50px, #fff 0);
+}
+
+
+/*décision*/
+.commentaire {
+	
+	color:white;
+	float:right;
+	width:29%;
+
+}
+
+.en-tête {
+	border:2px solid;
+    border-radius:25px;
+	text-align: center;
+	padding:6px;
+	margin-top:0.8em;
+	margin-bottom:0.1em;
+	background-color:#8ea2c6;
+	color:white;
+}
+
+.detail {
+	border:2px solid;
+    border-radius:25px;
+	text-align: center;
+	padding:8px;
+	background-color:#E8E8E8;
+	
+}
+
+.nompays{
+	text-align: center;
+	color:666699;
+	font-size:130%;
+}
+
+#decision {
+	width:100%;
+	float:left;
+	background-color:#DCDCDC;
+	padding-left:300px;
+	padding-right:300px;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px) {
+  #menu {
+    width: 100%;
+    height: 60px; 
+    display: inline;
+    padding: 0;
+    margin: 0 0 22px 0;
+    z-index:100;
+    top:0px;
+    left:0px;
+    position:fixed;
+    background: white;
+    border-bottom: 1px solid;
+}
+  
+  #menutext{
+    float:left;
+    width: 100%;
+    display: inline;
+    padding: 0;
+    margin-left:5px;
+  }
+  
+  #menu li a, #menu li a:link{
+    color: black;
+    margin-left: 5px;
+    font-size: 10px;
+    display: inline;
+    height: 15px;
+  }
+}
+
+  @media screen and (max-width: 768px) {
+  #menu {
+    width: 100%;
+    height: 60px; 
+    display: inline;
+}
+  
+  #menutext {
+    float:left;
+    width:100%; 
+    display: inline;
+    padding:0;
+    margin-left:5px;
+  }
+  
+  #menu li a, #menu li a:link {
+    color: black;
+    margin-left: 5px;
+    font-size: 10px;
+    display: inline;
+    height: 15px;
+  }
+
+}
+
+
